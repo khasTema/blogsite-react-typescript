@@ -2,6 +2,7 @@
     width: 100%;
     padding: 1.25rem 0;
     background-color: var(--main-color);
+    margin-bottom: 2.5rem;
 }
 
 .wrapper {
@@ -40,7 +41,7 @@
     box-shadow: var(--nav-link-hover-shadow);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 717px) {
     .wrapper {
         flex-direction: row;
     }

@@ -1,0 +1,9 @@
+.wrapper {
+    width: var(--width);
+    max-width: var(--content-max-width);
+    margin: var(--center);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}

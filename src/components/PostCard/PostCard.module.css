@@ -1,0 +1,32 @@
+.card {
+    width: 90%;
+    border: var(--standart-border);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+   font-family: var(--headings-font);
+}
+
+.card p {
+    font-family: var(--text-font);
+    font-weight: var(--fontweight-reg);
+    color: var(--text-secondary-color);
+}
+
+@media screen and (min-width: 717px) {
+    .card {
+        width: 47%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .card {
+        width: 29%;
+    }
+}
