@@ -1,16 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styles from './Header.module.css'
+import { headerConfig } from './Header.config'
 
-export const Header: React.FC = () => {
+export const Header: React.FC = (): JSX.Element => {
   return (
-    <header className='header'>
-        <div className="wrapper">
-            <div className="logo">
-                <h1>Blogpost page</h1>
+    <header className={styles.header}>
+        <div className={styles.wrapper}>
+            <div className={styles.logo}>
+                <h1>{headerConfig.logoText}</h1>
             </div>
-            <nav className="nav">
-                <Link to='/'>Home</Link>
-                <Link to='/new'>New Post</Link>
+            <nav className={styles.nav}>
+                <Link className={styles.link} to='/'>{headerConfig.homeLink}</Link>
+                <Link className={styles.link} to='/new'>{headerConfig.postLink}</Link>
             </nav>
         </div>
     </header>

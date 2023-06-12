@@ -14,6 +14,10 @@ body {
   justify-content: space-between;
 }
 
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
@@ -23,6 +27,10 @@ body {
   --button-color: #A459D1;
   --border-color: #2CD3E1;
 
+  --logo-text-color: #fff;
+  --text-color: #000;
+  --text-secondary-color: #323232;
+
   --headings-font: 'Kablammo';
   --text-font: 'Montserrat', sans-serif;
 
@@ -31,4 +39,9 @@ body {
   --fontweigh-bold: 700;
 
   --standart-border: 1px solid var(var(--border-color));
+
+  --content-max-width: 900px;
+  --width: 90%;
+
+  --nav-link-hover-shadow: 5px -8px 25px 13px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 }
