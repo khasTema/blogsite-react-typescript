@@ -1,0 +1,1 @@
+export { NoRoute } from "./404";
