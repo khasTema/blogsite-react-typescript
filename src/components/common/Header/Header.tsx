@@ -8,7 +8,9 @@ export const Header: React.FC = (): JSX.Element => {
     <header className={styles.header}>
         <div className={styles.wrapper}>
             <div className={styles.logo}>
+              <Link to='/'>
                 <h1>{headerConfig.logoText}</h1>
+              </Link>
             </div>
             <nav className={styles.nav}>
                 <Link className={styles.link} to='/'>{headerConfig.homeLink}</Link>

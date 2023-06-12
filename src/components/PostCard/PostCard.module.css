@@ -24,9 +24,3 @@
         width: 47%;
     }
 }
-
-@media screen and (min-width: 850px) {
-    .card {
-        width: 29%;
-    }
-}

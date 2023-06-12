@@ -1,0 +1,21 @@
+.tab {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 42px;
+   aspect-ratio: 1/1;
+   text-decoration: none;
+   background-color: var(--button-color);
+   opacity: .8;
+   color: var(--logo-text-color);
+   border-radius: 100%;
+   transition: all .3s;
+}
+
+.tab:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+}

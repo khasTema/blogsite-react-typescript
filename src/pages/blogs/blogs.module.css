@@ -2,6 +2,7 @@
     width: var(--width);
     max-width: var(--content-max-width);
     margin: var(--center);
+    margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

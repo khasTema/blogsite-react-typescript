@@ -19,6 +19,7 @@
     font-family: var(--headings-font);
     font-size: 1rem;
     color: var(--logo-text-color);
+    text-decoration: none;
 }
 
 .nav {
