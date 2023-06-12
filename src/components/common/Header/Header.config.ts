@@ -1,8 +1,4 @@
-interface IheaderConfig {
-    logoText: string;
-    homeLink: string;
-    postLink: string;
-}
+import { IheaderConfig } from "./inteface"
 
 export const headerConfig: IheaderConfig = {
     logoText: 'Blogpost page',

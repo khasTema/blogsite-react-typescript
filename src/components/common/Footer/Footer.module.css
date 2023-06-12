@@ -1,0 +1,9 @@
+.footer {
+    background-color: var(--secondary-color);
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--logo-text-color);
+    font-size: .8rem;
+    font-weight: var(--fontweight-reg);
+}
