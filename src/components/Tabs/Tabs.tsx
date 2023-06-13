@@ -5,7 +5,7 @@ import styles from './Tabs.module.css'
 export const Tabs: React.FC = ():JSX.Element => {
 
 
-    const {numberOfTabs} = useNumberOfTabs()
+  const { numberOfTabs } = useNumberOfTabs()
 
   return (
     <div className={styles.wrapper}>

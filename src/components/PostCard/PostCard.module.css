@@ -19,6 +19,11 @@
     color: var(--text-secondary-color);
 }
 
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media screen and (min-width: 717px) {
     .card {
         width: 47%;

@@ -15,7 +15,7 @@ function App() {
        <Routes>
           <Route index element={<Blogs/>}/>
           <Route path='/:tab' element={<Blogs/>}/>
-          <Route path='/:post' element={<Post/>}/>
+          <Route path='/details/:post' element={<Post/>}/>
           <Route path='/new' element={<NewPost/>}/>
           <Route path='*' element={<NoRoute/>}/>
        </Routes>

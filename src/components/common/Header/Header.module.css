@@ -17,7 +17,10 @@
 
 .logo {
     font-family: var(--headings-font);
-    font-size: 1rem;
+    font-size: 1rem; 
+}
+
+.logo a {
     color: var(--logo-text-color);
     text-decoration: none;
 }

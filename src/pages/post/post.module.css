@@ -1,0 +1,16 @@
+.wrapper {
+    width: var(--width);
+    max-width: var(--content-max-width);
+    margin: var(--center);
+    padding: 0 10%;
+}
+
+.wrapper h1 {
+    font-family: var(--headings-font);
+    font-size: 1.5rem; 
+}
+
+.wrapper p {
+    padding: 0 2rem;
+}
+

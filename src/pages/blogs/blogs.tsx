@@ -17,7 +17,8 @@ export const Blogs: React.FC = (): JSX.Element => {
       <div className={styles.wrapper}>
         {renderPosts.map(post => 
                           <PostCard 
-                              key={post.id} 
+                              key={post.id}
+                              id={post.id} 
                               userId={post.userId} 
                               title={post.title} 
                               body={post.body}
