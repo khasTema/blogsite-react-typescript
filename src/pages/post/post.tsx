@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from './post.module.css'
 import { usePost } from './hook/usePost'
-import { Link } from 'react-router-dom'
+import { Button } from '../../components/UI/Button'
+import { postConfig } from './post.config'
+
 
 export const Post:React.FC = ():JSX.Element => {
 
@@ -19,7 +21,7 @@ export const Post:React.FC = ():JSX.Element => {
       <p>{postToShow?.body}</p>
       <p>{postToShow?.body}</p>
       <span> Author: {postToShow?.userId}</span>
-      <Link to='/' className={styles.back}>Back to all posts</Link>
+      <Button linkTo='/' textBtn={postConfig.backLink}/>
     </article>
   )
 }

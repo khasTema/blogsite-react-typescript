@@ -1,8 +1,8 @@
 import React from 'react'
 import { IPost } from '../../interface'
 import styles from './PostCard.module.css'
-import { Link } from 'react-router-dom'
 import { postCardConfig } from './PostCard.config'
+import { Button } from '../UI/Button'
 
 export const PostCard: React.FC<IPost> = ({userId, title, body, id}):JSX.Element => {
   return (
@@ -11,7 +11,7 @@ export const PostCard: React.FC<IPost> = ({userId, title, body, id}):JSX.Element
         <p>{body}</p>
         <div className={styles.info}>
             <span className={styles.user}>{userId}</span>
-            <Link to={`/details/${id}`} className={styles.more}>{postCardConfig.moreLink}</Link>
+            <Button linkTo={`/details/${id}`} textBtn={postCardConfig.moreLink}/>
         </div>
     </div>
   )

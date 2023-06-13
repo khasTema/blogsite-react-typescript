@@ -14,25 +14,3 @@
     padding: 0 2rem;
 }
 
-.back {
-    width: fit-content;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: var(--text-font);
-    font-size: 1rem;
-    font-weight: var(--fontweight-semibold);
-    color: var(--logo-text-color);
-    background-color: var(--button-color);
-    padding: .3rem;
-    opacity: .7;
-    transition: all .3s;
-}
-
-.back:hover {
-    opacity: 1;
-}
-
