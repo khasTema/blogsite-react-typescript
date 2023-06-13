@@ -19,6 +19,31 @@
     color: var(--text-secondary-color);
 }
 
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--text-font);
+    font-size: 1rem;
+    font-weight: var(--fontweight-semibold);
+    color: var(--logo-text-color);
+    background-color: var(--button-color);
+    padding: .3rem;
+    opacity: .7;
+    transition: all .3s;
+}
+
+.more:hover {
+    opacity: 1;
+}
+
 @media screen and (min-width: 717px) {
     .card {
         width: 47%;
