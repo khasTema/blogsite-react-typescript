@@ -5,21 +5,22 @@ import { Blogs } from './pages/blogs';
 import { Post } from './pages/post';
 import { NoRoute } from './pages/404';
 import { NewPost } from './pages/newPost';
-import { Header } from './components/common/Header';
-import { Footer } from './components/common/Footer';
+// import { Header } from './components/common/Header';
+// import { Footer } from './components/common/Footer';
+import { Layout } from './pages/Layout';
 
 function App() {
   return (
     <div className="layout">
-        <Header/>
         <Routes>
+          <Route path='/' element={<Layout/>}>
             <Route index element={<Blogs/>}/>
-            <Route path='/:tab' element={<Blogs/>}/>
-            <Route path='/details/:post' element={<Post/>}/>
-            <Route path='/new' element={<NewPost/>}/>
+            <Route path='list/:tab' element={<Blogs/>}/>
+            <Route path='details/:post' element={<Post/>}/>
+            <Route path='create/new' element={<NewPost/>}/>
             <Route path='*' element={<NoRoute/>}/>
+          </Route>
         </Routes>
-        <Footer/>
     </div>
   );
 }
