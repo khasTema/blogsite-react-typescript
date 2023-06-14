@@ -1,10 +1,12 @@
+//@ts-nocheck
 import { useMemo } from 'react'
-import { usePostList } from '../../../hooks/usePostList/usePostList'
+// import { usePostList } from '../../../hooks/usePostList/usePostList'
 import { POSTS_PER_PAGE } from '../../../constants'
+import { useSelector } from 'react-redux'
 
 export const useNumberOfTabs = () => {
 
-    const {postList} = usePostList()
+    const postList = useSelector((state)=> state.postList.value)
 
     // calculating number of tabs depending on array of post length
     // taking in account that we want only 10 posts per page

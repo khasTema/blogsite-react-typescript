@@ -8,6 +8,6 @@ interface IPropTab {
 
 export const Tab: React.FC<IPropTab> = ({item}):JSX.Element => {
   return (
-    <Link className={styles.tab} to={`/${item}`}>{item}</Link>
+    <Link className={styles.tab} to={`list/${item}`}>{item}</Link>
   )
 }

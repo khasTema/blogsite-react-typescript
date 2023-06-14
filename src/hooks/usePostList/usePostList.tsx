@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { IPost } from "../../interface";
+import { useDispatch } from 'react-redux'
+import {setState} from '../../redux/postList'
 
 export const usePostList = () => {
-    const [postList, setPostList] = useState<IPost[]>([])
     const [isLoading, setIsLoading] = useState<boolean>(false)
     const [error, setError] = useState<boolean>(false)
+
+    const dispatch = useDispatch()
 
     useEffect(()=> {
         setIsLoading(true)
@@ -12,7 +15,7 @@ export const usePostList = () => {
             const responce: Response = await fetch(`https://jsonplaceholder.typicode.com/posts`)
             const json: IPost[] = await responce.json()
             setIsLoading(false)
-            setPostList(json)
+            dispatch(setState(json))
         }
         try {
             getPosts()
@@ -24,5 +27,5 @@ export const usePostList = () => {
 
     }, [])
 
-    return {postList, isLoading, error}
+    return {isLoading, error}
 }

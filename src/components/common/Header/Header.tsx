@@ -14,7 +14,7 @@ export const Header: React.FC = (): JSX.Element => {
             </div>
             <nav className={styles.nav}>
                 <Link className={styles.link} to='/'>{headerConfig.homeLink}</Link>
-                <Link className={styles.link} to='/new'>{headerConfig.postLink}</Link>
+                <Link className={styles.link} to='create/new'>{headerConfig.postLink}</Link>
             </nav>
         </div>
     </header>

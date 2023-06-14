@@ -1,31 +1,12 @@
-import React, { useState } from 'react'
 import styles from './newPost.module.css'
 import { newPostConfig } from './newPost.config'
 import { Button } from '../../components/UI/Button'
 import { Input } from '../../components/UI/Input'
-import { InewPostState } from './inteface'
+import { useNewPost } from './hook/useNewPost'
 
 export const NewPost:React.FC = ():JSX.Element => {
 
-  const [newPost, setNewPost] = useState<InewPostState>({
-    userId: '',
-    title: '',
-    body: ''
-  })
-
-  const handleInputsChange = (e:React.ChangeEvent<HTMLInputElement>) => {
-    setNewPost({...newPost, [e.target.name]: e.target.value})
-  }
-
-  const handleSubmit = ():void => {
-     console.log(newPost)
-     setNewPost({
-        userId: '',
-        title: '',
-        body: ''
-     })
-  }
-
+  const {newPost, handleInputsChange, handleSubmit} = useNewPost()
 
   return (
     <div className={styles.wrapper}>
