@@ -11,15 +11,15 @@ import { Footer } from './components/common/Footer';
 function App() {
   return (
     <div className="layout">
-       <Header/>
-       <Routes>
-          <Route index element={<Blogs/>}/>
-          <Route path='/:tab' element={<Blogs/>}/>
-          <Route path='/details/:post' element={<Post/>}/>
-          <Route path='/new' element={<NewPost/>}/>
-          <Route path='*' element={<NoRoute/>}/>
-       </Routes>
-       <Footer/>
+        <Header/>
+        <Routes>
+            <Route index element={<Blogs/>}/>
+            <Route path='/:tab' element={<Blogs/>}/>
+            <Route path='/details/:post' element={<Post/>}/>
+            <Route path='/new' element={<NewPost/>}/>
+            <Route path='*' element={<NoRoute/>}/>
+        </Routes>
+        <Footer/>
     </div>
   );
 }
