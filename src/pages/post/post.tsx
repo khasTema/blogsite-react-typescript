@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './post.module.css'
-import { usePost } from './hook/usePost'
+import { usePost } from '../../hooks/usePost'
 import { Button } from '../../components/UI/Button'
 import { postConfig } from './post.config'
 

@@ -7,7 +7,7 @@ import { NoRoute } from './pages/404';
 import { NewPost } from './pages/newPost';
 // import { Header } from './components/common/Header';
 // import { Footer } from './components/common/Footer';
-import { Layout } from './pages/Layout';
+import { Layout } from './Layout';
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { IPost } from "../../interface";
+import { IPost } from "../interface";
 import { useDispatch } from 'react-redux'
-import {setState} from '../../redux/postList'
+import {setState} from '../redux/postList'
 
 export const usePostList = () => {
     const [isLoading, setIsLoading] = useState<boolean>(false)

@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { InewPostState } from "../inteface"
+import { InewPostState } from "../pages/newPost/inteface"
 import { useDispatch } from 'react-redux'
-import {updateState} from '../../../redux/postList'
+import {updateState} from '../redux/postList'
 import { nanoid } from 'nanoid'
 import { useNavigate } from "react-router"
 
