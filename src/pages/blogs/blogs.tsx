@@ -13,6 +13,7 @@ export const Blogs: React.FC = (): JSX.Element => {
   if (error) {return <h1>Ooops, something wronng...</h1>}
   if (isLoading) { return <h1>Loading Post data...</h1> }
 
+  
   return (
     <>
       <div className={styles.wrapper}>
