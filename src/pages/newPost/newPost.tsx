@@ -2,7 +2,7 @@ import styles from './newPost.module.css'
 import { newPostConfig } from './newPost.config'
 import { Button } from '../../components/UI/Button'
 import { Input } from '../../components/UI/Input'
-import { useNewPost } from './hook/useNewPost'
+import { useNewPost } from '../../hooks/useNewPost'
 
 export const NewPost:React.FC = ():JSX.Element => {
 

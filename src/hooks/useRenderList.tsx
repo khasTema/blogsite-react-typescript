@@ -1,6 +1,6 @@
 //@ts-nocheck
-import { POSTS_PER_PAGE } from '../../../constants'
-import { IPost } from '../../../interface'
+import { POSTS_PER_PAGE } from '../constants'
+import { IPost } from '../interface'
 import { useParams } from 'react-router'
 import { useSelector } from 'react-redux'
 

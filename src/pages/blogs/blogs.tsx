@@ -1,5 +1,5 @@
-import { usePostList } from '../../hooks/usePostList/usePostList'
-import { useRenderList } from './hook/useRenderList'
+import { usePostList } from '../../hooks/usePostList'
+import { useRenderList } from '../../hooks/useRenderList'
 import { PostCard } from '../../components/PostCard/PostCard'
 import { Tabs } from '../../components/Tabs'
 import styles from './blogs.module.css'
@@ -9,11 +9,11 @@ export const Blogs: React.FC = (): JSX.Element => {
   const {isLoading, error} = usePostList()
   const {renderPosts} = useRenderList()
 
-  console.log(renderPosts[0])
 
   if (error) {return <h1>Ooops, something wronng...</h1>}
   if (isLoading) { return <h1>Loading Post data...</h1> }
 
+  
   return (
     <>
       <div className={styles.wrapper}>

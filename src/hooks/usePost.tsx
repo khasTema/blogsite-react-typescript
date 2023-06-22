@@ -1,12 +1,10 @@
 //@ts-nocheck
-// import { usePostList } from "../../../hooks/usePostList/usePostList";
 import { useParams } from "react-router";
-import { IPost } from "../../../interface";
+import { IPost } from "../interface";
 import { useEffect, useState } from "react";
 import { useSelector } from 'react-redux'
 
 export const usePost = () => {
-    // const {postList} = usePostList()
 
     const postList = useSelector((state)=> state.postList.value)
 

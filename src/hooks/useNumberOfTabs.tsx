@@ -1,7 +1,7 @@
 //@ts-nocheck
 import { useMemo } from 'react'
 // import { usePostList } from '../../../hooks/usePostList/usePostList'
-import { POSTS_PER_PAGE } from '../../../constants'
+import { POSTS_PER_PAGE } from '../constants'
 import { useSelector } from 'react-redux'
 
 export const useNumberOfTabs = () => {

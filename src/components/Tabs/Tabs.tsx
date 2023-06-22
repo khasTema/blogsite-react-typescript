@@ -1,4 +1,4 @@
-import { useNumberOfTabs } from "./hook/useNumberOfTabs"
+import { useNumberOfTabs } from "../../hooks/useNumberOfTabs"
 import { Tab } from "./Tab/Tab"
 import styles from './Tabs.module.css'
 
