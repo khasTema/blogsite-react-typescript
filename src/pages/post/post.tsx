@@ -1,15 +1,15 @@
-import React from 'react'
-import styles from './post.module.css'
-import { usePost } from '../../hooks/usePost'
-import { Button } from '../../components/UI/Button'
-import { postConfig } from './post.config'
+import React from "react";
+import styles from "./post.module.css";
+import { usePost } from "../../hooks/usePost";
+import { Button } from "../../components/UI/Button";
+import { postConfig } from "./post.config";
 
+export const Post: React.FC = (): JSX.Element => {
+  const { postToShow, isLoading } = usePost();
 
-export const Post:React.FC = ():JSX.Element => {
-
-  const {postToShow, isLoading} = usePost()
-
-  if (isLoading) {return <h1>Loading...</h1>}
+  if (isLoading) {
+    return <h1>Loading...</h1>;
+  }
 
   return (
     <article className={styles.wrapper}>
@@ -21,8 +21,7 @@ export const Post:React.FC = ():JSX.Element => {
       <p>{postToShow?.body}</p>
       <p>{postToShow?.body}</p>
       <span> Author: {postToShow?.userId}</span>
-      <Button linkTo='/' textBtn={postConfig.backLink}/>
+      <Button linkTo="/" textBtn={postConfig.backLink} />
     </article>
-  )
-}
-
+  );
+};
